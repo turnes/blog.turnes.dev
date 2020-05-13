@@ -8,7 +8,7 @@
           :to="tag.path"
           v-for="tag in $page.post.tags"
           :key="tag.id"
-          class="bg-gray-300 rounded-full px-4 py-2 mr-4 hover:bg-green-300">
+          class="tag text-nord-6 bg-nord-11 rounded-full px-4 py-2 mr-4 hover:text-nord-0">
           {{ tag.title }}
         </g-link>
       </div>

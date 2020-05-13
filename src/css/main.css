@@ -4,15 +4,17 @@
 
 @tailwind utilities;
 
+
+
 .theme-light {
-  --bg-background-primary: white;
-  --bg-background-secondary: #f7fafc;
-  --bg-background-tertiary: #e2e8f0;
+  --bg-background-primary: #FFF;
+  --bg-background-secondary: #E5E9F0;
+  --bg-background-tertiary: #D8DEE9;
 
   --bg-background-form: white;
 
-  --text-copy-primary: #2d3748;
-  --text-copy-secondary: #4a5568;
+  --text-copy-primary: #2E3440;
+  --text-copy-secondary: #3B4252;
 
   --border-border-color-primary: white;
 }
@@ -38,41 +40,43 @@
 }
 
 .theme-dark {
-  --bg-background-primary: #0D2438;
-  --bg-background-secondary: #102C44;
-  --bg-background-tertiary: #1E3951;
-
+  --bg-background-primary: #2E3440;
+  --bg-background-secondary: #3B4252;
+  --bg-background-tertiary: #434C5E;
   --bg-background-form: #1a202c;
-
-  --text-copy-primary: #cbd5e0;
-  --text-copy-secondary: #e2e8f0;
-
-  --border-border-color-primary:  #1a202c;
+  --text-copy-primary: #ECEFF4;
+  --text-copy-secondary: #E5E9F0;
+  --border-border-color-primary:  #5E81AC;
 }
 
 .theme-dark .markdown-body {
     color: #cbd5e0;
 }
 
-.theme-dark nav .active {
-    @apply border-white border-b;
+.theme-dark nav .active--exact {
+    @apply border-nord-11 border-b;
 }
 
 .content-wrapper {
   transition: background-color .25s;
 }
 
+.logo {
+  display: inline-block;
+}
+
 a {
-  @apply text-green-700 font-bold;
+  @apply text-nord-11 font-bold;
 }
 
 a:hover {
-  @apply text-green-800;
+  @apply text-nord-11 border-b border-nord-11;
 }
 
-nav .active {
+
+nav .active--exact {
   font-weight: bold;
-  @apply border-black border-b;
+  @apply border-nord-10 border-b border-nord-11;
 }
 
 .container-inner {
@@ -117,4 +121,8 @@ nav .active {
   width: 100%;
   height: 100%;
   border: 0;
+}
+
+.tag {
+  @apply border-0 !important;
 }

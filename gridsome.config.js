@@ -5,9 +5,9 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Gridsome Portfolio Starter',
-  siteDescription: 'A simple portfolio theme for Gridsome powered by Tailwind CSS v1',
-  siteUrl: 'https://gridsome-portfolio-starter.netlify.com',
+  siteName: 'Turnes Dev',
+  siteDescription: 'Every Day I Learn',
+  siteUrl: 'https://www.turnes.dev',
   plugins: [
     {
       use: 'gridsome-plugin-tailwindcss',
@@ -35,18 +35,6 @@ module.exports = {
           ],
           defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
         },
-      }
-    },
-    {
-      use: '@gridsome/vue-remark',
-      options: {
-        typeName: 'Documentation', // Required
-        baseDir: './docs', // Where .md files are located
-        pathPrefix: '/docs', // Add route prefix. Optional
-        template: './src/templates/Documentation.vue', // Optional
-        plugins: [
-          [ 'gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Palenight', skipInline: true } ]
-      ],
       }
     },
     {
